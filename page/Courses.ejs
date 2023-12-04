@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Courses</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/Courses.css">
+    </head>
+    <body>
+        <style type="text/css">
+            /* Define the styles for the footer */
+            .footer {
+                width: 200px;
+                background-color: transparent;
+                position: fixed;
+                right: 0;
+                bottom: 0;
+                
+            }
+        
+            /* Define the styles for the button inside the footer */
+            .footer .btn {
+                color: rgb(255, 255, 255);
+                width: 200px;
+                height: 80px;
+                font-size: 60px;
+                cursor: pointer;
+                background-color: gray;
+                border: 1px solid #000;
+                transition: all .3s linear;
+                border-radius: 50% 20% / 10% 40%;
+            }
+        
+            .footer .btn p{
+                position: relative;
+                z-index: 1;     
+            }
+        
+        
+            </style>
+                
+                
+                <div class="footer">
+                    <a href="/Bar-Student/Dashboard" target="rightframe"><input id="btnCancel" class="btn" type="button" value="back" /></a>
+                </div>
+        <div class="left">
+            <h1>Courses</h1><hr>
+        </div>
+        <div class="wrapper">
+            <ul class="items">
+                <% for (i in result) { %>
+                <li class="item">
+                 <div class="inner">
+                    <h4 class="name"><%=result[i]['cName'] %></h4>
+                    <p class="descr">time:<%=result[i]['start_time'] %>- <%=result[i]['end_time'] %><br>at <%=result[i]['date'] %><br>in room <%=result[i]['room'] %></p>
+                </div>
+                </li>
+                <% } %>
+            </ul>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- 字元集和視窗設定的元資料 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <!-- 連結到外部 CSS 檔案 -->
+    <!-- <link rel="stylesheet" href="css/newlogin.css"> -->
+
+    <link rel="stylesheet" href="/css/newlogin.css">
+ 
+    <!-- 頁面標題 -->
+    <title><%=testTitle%></title>
+    </head>
+
+
+<body>
+
+    <!-- 包含登入和註冊表單的容器 -->
+    <div class="wrapper">
+        <!-- 關閉圖示，連結回首頁 -->
+        <span class="icon-close">
+            <a href="/homepage">
+                <ion-icon name="close"></ion-icon>
+            </a>
+        </span>
+
+        <!-- 登入表單 -->
+        <div class="form-box login">
+            <h2>Login</h2>
+            <!-- 登入表單包括電子郵件、密碼、記住我和忘記密碼選項 -->
+            <form action="/newlogin" method="post" target="home">
+                <!-- 電子郵件輸入框 -->
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="text" id="login_email" name="login_email" required>
+                    <label>email</label>
+                </div>
+
+                <!-- 密碼輸入框 -->
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" id="password" name="password" required>
+                    <label>password</label>
+                </div>
+
+                <!-- 記住我和忘記密碼選項 -->
+                <div class="remember-forgot">
+                    <label><input type="checkbox">remember me</label>
+                    <a href="#">forget password<ion-icon name="sad"></ion-icon></a>
+                </div>
+
+                <!-- 登入按鈕 -->
+                <button type="submit" class="btn" value="login">login</button>
+
+                <!-- 註冊連結 -->
+                <div class="longin-register">
+                    <p>new student<a href="#" class="register-link"><ion-icon name="arrow-forward"></ion-icon>click
+                            here</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+
+        <!-- 註冊表單 -->
+        <div class="form-box register">
+            <h2>register</h2>
+            <!-- 註冊表單包括使用者名稱、電子郵件、密碼、同意條款和忘記密碼選項 -->
+            <form action="/register" method="post" target="home">
+            
+                <!-- 使用者名稱輸入框 -->
+
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
+                    <input type="text" id="registerFirstName" name="registerFirstName" required>
+                    <label>first name</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
+                    <input type="text" id="registerLastName" name="registerLastName" required>
+                    <label>last name</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="people-circle"></ion-icon></span>
+                    <input type="text" id="registerUserID" name="registerUserID" required>
+                    <label>userID</label>
+                </div>
+
+                
+
+                <!-- 電子郵件輸入框 -->
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" id="registerEmail" name="registerEmail" required>
+                    <label>email</label>
+                </div>
+
+                <!-- 密碼輸入框 -->
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" id="registerPassword" name="registerPassword" required>
+                    <label>password</label>
+                </div>
+
+                <!-- 註冊按鈕 -->
+                <button type="submit" class="btn">register</button>
+
+                <!-- 登入連結 -->
+                <div class="longin-register">
+                    <p>already have the account?<a href="#" class="login-link"><ion-icon
+                                name="arrow-forward"></ion-icon>back</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- 連結到外部 JavaScript 檔案 -->
+    <script src="/js/newlogin.js"></script>
+    <% if(register){%>
+        <script>
+            window.alert("register finished")
+        </script>
+    <%  } %>
+
+
+
+    <!-- Ionicons 腳本用於圖示 -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

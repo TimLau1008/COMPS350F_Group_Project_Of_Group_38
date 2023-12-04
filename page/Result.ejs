@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Result</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/Result.css">
+    </head>
+    <body>
+        <style type="text/css">
+            /* Define the styles for the footer */
+            .footer {
+                width: 200px;
+                background-color: transparent;
+                position: fixed;
+                right: 0;
+                bottom: 0;
+                
+            }
+        
+            /* Define the styles for the button inside the footer */
+            .footer .btn {
+                color: rgb(255, 255, 255);
+                width: 200px;
+                height: 80px;
+                font-size: 60px;
+                cursor: pointer;
+                background-color: gray;
+                border: 1px solid #000;
+                transition: all .3s linear;
+                border-radius: 50% 20% / 10% 40%;
+            }
+        
+            .footer .btn p{
+                position: relative;
+                z-index: 1;     
+            }
+        
+        
+            </style>
+                
+                
+                <div class="footer">
+                    <a href="/Bar-Student/Dashboard" target="rightframe"><input id="btnCancel" class="btn" type="button" value="back" /></a>
+                </div>
+        <div class="left">
+            <h1>Result</h1><hr>
+            <button onclick="myFunction()" class="button">Check</button>
+            <h1 id="CGPAResult" name="CGPAResult"></h1>
+        </div>
+        <br>
+    </body>
+    
+    <script>
+        function myFunction() {
+            document.getElementById("CGPAResult").innerHTML = "GPA: <%= cGPA %>";
+        }
+    </script>
+</html>

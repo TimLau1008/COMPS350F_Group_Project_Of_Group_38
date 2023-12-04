@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Booking</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="/css/style-booking.css">
+    </head>
+    <body>
+		<style type="text/css">
+			/* Define the styles for the footer */
+			.footer {
+				width: 200px;
+				background-color: transparent;
+				position: fixed;
+				right: 0;
+				bottom: 0;
+				
+			}
+		
+			/* Define the styles for the button inside the footer */
+			.footer .btn {
+				color: rgb(255, 255, 255);
+				width: 200px;
+				height: 80px;
+				font-size: 60px;
+				cursor: pointer;
+				background-color: gray;
+				border: 1px solid #000;
+				transition: all .3s linear;
+				border-radius: 50% 20% / 10% 40%;
+			}
+		
+			.footer .btn p{
+				position: relative;
+				z-index: 1;     
+			}
+		
+		
+			</style>
+				
+				
+				<div class="footer">
+					<a href="/Bar-Student/Dashboard" target="rightframe"><input id="btnCancel" class="btn" type="button" value="back" /></a>
+				</div>
+		<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<h2 class="heading-section">Facility Booking</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="table-wrap">
+						<table class="table">
+					    <thead class="thead-primary">
+					      <tr>
+					        <th>Facility</th>
+					        <th>Duration</th>
+					        <th>Capacity</th>
+					        <th>Start Time</th>
+					        <th>End Time</th>
+					        <th>Register</th>
+					      </tr>
+					    </thead>
+					    <tbody>
+					      <tr>
+					        <th scope="row" class="scope">Study Room 1</th>
+					        <td>2 Hour</td>
+					        <td>6</td>
+					        <td>11:00</td>
+					        <td>13:00</td>
+					        <td><a href="#" class="btn btn-primary" onclick="alert('You are successful');">Book</a></td>
+					      </tr>
+					      <tr>
+					        <th scope="row" class="scope" >Study Room 1</th>
+					        <td>2 Hour</td>
+					        <td>6</td>
+					        <td>13:00</td>
+					        <td>15:00</td>
+					        <td><a href="#" class="btn btn-primary" onclick="alert('You are successful');">Book</a></td>
+					      </tr>
+					      <tr>
+					        <th scope="row" class="scope" >Study Room 1</th>
+					        <td>2 Hour</td>
+					        <td>6</td>
+					        <td>15:00</td>
+					        <td>17:00</td>
+					        <td><a href="#" class="btn btn-primary" onclick="alert('You are successful');">Book</a></td>
+					      </tr>
+					      <tr>
+					        <th scope="row" class="scope" >Study Room 1</th>
+					        <td>2 Hour</td>
+					        <td>6</td>
+					        <td>17:00</td>
+					        <td>19:00</td>
+                                                <td><a href="#" class="btn btn-primary"onclick="alert('You are successful');">Book</a></td>
+					      </tr>
+					      <tr>
+					        <th scope="row" class="scope" >Study Room 2</th>
+					        <td>2 Hour</td>
+					        <td>10</td>
+					        <td>11:00</td>
+					        <td>13:00</td>
+					        <td><a href="#" class="btn btn-primary"onclick="alert('You are successful');">Book</a></td>
+					      </tr>
+                                              <tr>
+					        <th scope="row" class="scope" >Study Room 2</th>
+					        <td>2 Hour</td>
+					        <td>10</td>
+					        <td>13:00</td>
+					        <td>15:00</td>
+					        <td><a href="#" class="btn btn-primary"onclick="alert('You are successful');">Book</a></td>
+					      </tr>
+                                              <tr>
+					        <th scope="row" class="scope" >Study Room 2</th>
+					        <td>2 Hour</td>
+					        <td>10</td>
+					        <td>15:00</td>
+					        <td>17:00</td>
+					        <td><a href="#" class="btn btn-primary"onclick="alert('You are successful');">Book</a></td>
+					      </tr>
+					      <tr>
+					        <th scope="row" class="scope border-bottom-0">Study Room 2</th>
+					        <td class="border-bottom-0">2 Hour</td>
+					        <td class="border-bottom-0">10</td>
+					        <td class="border-bottom-0">17:00</td>
+					        <td class="border-bottom-0">19:00</td>
+					        <td class="border-bottom-0"><a href="#" class="btn btn-primary"onclick="alert('You are successful');">Book</a></td>
+					      </tr>
+					    </tbody>
+					  </table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="/js/b-jquery.min.js"></script>
+        <script src="/js/b-popper.js"></script>
+        <script src="/js/b-bootstrap.min.js"></script>
+        <script src="/js/b-main.js"></script>
+
+    </body>
+</html>

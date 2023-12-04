@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dashboard</title>
+        <link rel="stylesheet" href="/css/Dashboard.css">
+    </head>
+    <body>
+
+    <style type="text/css">
+    /* Define the styles for the footer */
+    .footer {
+        width: 200px;
+        background-color: transparent;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        
+    }
+
+    /* Define the styles for the button inside the footer */
+    .footer .btn {
+        color: rgb(255, 255, 255);
+        width: 200px;
+        height: 80px;
+        font-size: 60px;
+        cursor: pointer;
+        background-color: gray;
+        border: 1px solid #000;
+        transition: all .3s linear;
+        border-radius: 50% 20% / 10% 40%;
+    }
+
+    .footer .btn p{
+        position: relative;
+        z-index: 1;     
+    }
+
+
+    </style>
+        
+        
+        
+                
+        
+        <div id="banner">
+            <div id="current_date" class="banner-date"></div>
+            <img src="/img/dashboard/Dashboard-Banner.webp" alt="Dashboard Banner">
+            <h1>Welocome back, <%= name%>!</h1>
+            <p>Always stay updated in your student portal</p>
+        </div>
+        <br>
+        
+        <h2>Learning Tools</h2>
+        <div class="row">
+            <div class="column left1" style="background-color:#a0d2eb;">
+                <img src="/img/dashboard/canvas.png" alt="Canva" class="center">
+                <h2>Canva</h2>
+            </div>
+            <div class="column left2" style="background-color:#e5eaf5;">
+                <img src="/img/dashboard/kahoot.png" alt="Kahoot" class="center">
+                <h2>Kahoot</h2>
+            </div>
+            <div class="column right1" style="background-color:#d0bdf4;">
+                <img src="/img/dashboard/mentimeter.png" alt="Mentimeter" class="center">
+                <h2>Mentimeter</h2>
+            </div>
+            <div class="column right2" style="background-color:#8458B3;">
+                <img src="/img/dashboard/miro.png" alt="Miro" class="center">
+                <h2>Miro</h2>
+            </div>
+        </div>
+        
+        <h2>Enrolled Courses</h2>
+        <div class="row">
+            <div class="column2 left" style="background-color:#FBADFF;">
+                <h2>Object oriented programming</h2>
+                <img src="/img/dashboard/Computer.png" alt="Computer">
+                <p>Monday 09:00-11:00 JCC D0309</p>
+                <button class="button">View</button>
+            </div>
+            <div class="column2 mid">
+            </div>
+            <div class="column2 right" style="background-color:#FBADFF;">
+                <h2>Software Engineering</h2>
+                <img src="/img/dashboard/Software.png" alt="Software">
+                <p>Friday 12:00-16:00 JCC D0309</p>
+                <button class="button">View</button>
+            </div>
+        </div>
+        <script src="/js/Dashboard.js"></script>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+body{
+    background-color: #DFCFBE;
+}
+
+.left .button {
+  width: 50%;
+  height: 45px;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  padding: 14px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  cursor: pointer;
+  background-color: red;
+  position: relative;
+}
+
+.left{
+    margin-left: 5px;
+}
+
